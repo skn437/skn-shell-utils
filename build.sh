@@ -10,7 +10,7 @@ set -e
 DIRECTORY="${HOME}/.shell-lib"
 TAG="1.1.0"
 
-mkdir "${DIRECTORY}"
+mkdir -p "${DIRECTORY}"
 
 curl -sL "https://github.com/skn437/skn-shell-utils/archive/refs/tags/v${TAG}.tar.gz" >"${DIRECTORY}/shell.tar.gz"
 
