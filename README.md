@@ -1,6 +1,6 @@
 # SKN Shell Script Utility Library
 
-[![GitHub Release](https://img.shields.io/github/v/release/skn437/skn-shell-utils)](https://github.com/skn437/skn-shell-utils/releases/tag/v1.0.0) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
+[![GitHub Release](https://img.shields.io/github/v/release/skn437/skn-shell-utils)](https://github.com/skn437/skn-shell-utils/releases/tag/v1.1.0) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
 
 &nbsp;
 
@@ -68,10 +68,13 @@
 > bash ~/Downloads/build.sh
 > ```
 
-### Inside your shell script, you can import the `main.sh` script to get the library
+### Inside your shell script, you can import the scripts like this to get the library
 
 > ```zsh
-> source ~/.shell-lib/utils/main.sh
+> source ~/.shell-lib/utils/basic.sh
+> source ~/.shell-lib/utils/color.sh
+> source ~/.shell-lib/utils/color.util.sh
+> source ~/.shell-lib/utils/message.sh
 > ```
 
 ### For `Basic` functions, use it like following
