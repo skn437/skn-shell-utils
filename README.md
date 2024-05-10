@@ -71,10 +71,10 @@
 ### Inside your shell script, you can import the scripts like this to get the library
 
 > ```zsh
-> source ~/.shell-lib/utils/basic.sh
-> source ~/.shell-lib/utils/color.sh
-> source ~/.shell-lib/utils/color.util.sh
-> source ~/.shell-lib/utils/message.sh
+> source "${HOME}/.shell-lib/utils/basic.sh"
+> source "${HOME}/.shell-lib/utils/color.sh"
+> source "${HOME}/.shell-lib/utils/color.util.sh"
+> source "${HOME}/.shell-lib/utils/message.sh"
 > ```
 
 ### For `Basic` functions, use it like following
