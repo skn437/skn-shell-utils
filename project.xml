@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <version>1.0.0</version>
+
+  <name>skn-shell-utils</name>
+  <description>Shell Script Utility Functions</description>
+
+  <developers>
+    <developer>
+      <author>SKN Shukhan</author>
+      <email>skn437physx@gmail.com</email>
+      <repositoryUrl>https://github.com/skn437/skn-shell-utils</repositoryUrl>
+      <organizationUrl>https://www.skn.best</organizationUrl>
+    </developer>
+  </developers>
+</project>
