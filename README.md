@@ -63,7 +63,8 @@
 ### To install, open the terminal & do the following
 
 > ```zsh
-> curl -sL https://raw.githubusercontent.com/skn437/skn-shell-utils/master/build.sh > ~/Downloads
+> curl -sL https://raw.githubusercontent.com/skn437/skn-shell-utils/master/build.sh > ~/Downloads/build.sh
+> chmod u+x ~/Downloads/build.sh
 > bash ~/Downloads/build.sh
 > ```
 
