@@ -1,6 +1,6 @@
 # SKN Shell Script Utility Library
 
-![GitHub Release](https://img.shields.io/github/v/release/skn437/https%3A%2F%2Fgithub.com%2Fskn437%2Fskn-shell-utils.git) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
+[![GitHub Release](https://img.shields.io/github/v/release/skn437/skn-shell-utils)](https://github.com/skn437/skn-shell-utils/releases/tag/v1.0.0) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
 
 &nbsp;
 
@@ -59,6 +59,19 @@
 &nbsp;
 
 ## **_Usage:_**
+
+### To install, open the terminal & do the following
+
+> ```zsh
+> curl -sL > ~/Downloads
+> bash ~/Downloads/build.sh
+> ```
+
+### Inside your shell script, you can import the `main.sh` script to get the library
+
+> ```zsh
+> source ~/.shell-lib/utils/main.sh
+> ```
 
 ### For `Basic` functions, use it like following
 
