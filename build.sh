@@ -8,18 +8,26 @@ set -e
 
 #* Code starts here
 DIRECTORY="${HOME}/.shell-lib"
-TAG="1.1.0"
+TAG="1.2.0"
+
+UTILS_DIRECTORY="${DIRECTORY}/ssu"
+TAR_FILE="${DIRECTORY}/shell.tar.gz"
+EXTRACTED_TAR_DIRECTORY="${DIRECTORY}/skn-shell-utils-${TAG}"
 
 mkdir -p "${DIRECTORY}"
 
-curl -sL "https://github.com/skn437/skn-shell-utils/archive/refs/tags/v${TAG}.tar.gz" >"${DIRECTORY}/shell.tar.gz"
+if test -d "${UTILS_DIRECTORY}"; then
+	rm -rf "${UTILS_DIRECTORY}"
+fi
 
-tar -xzf "${DIRECTORY}/shell.tar.gz" -C "${DIRECTORY}"
+curl -sL "https://github.com/skn437/skn-shell-utils/archive/refs/tags/v${TAG}.tar.gz" >"${TAR_FILE}"
 
-mv "${DIRECTORY}/skn-shell-utils-${TAG}/src" "${DIRECTORY}/utils"
+tar -xzf "${TAR_FILE}" -C "${DIRECTORY}"
 
-rm -rf "${DIRECTORY}/skn-shell-utils-${TAG}"
+mv "${EXTRACTED_TAR_DIRECTORY}/src" "${UTILS_DIRECTORY}"
 
-rm "${DIRECTORY}/shell.tar.gz"
+rm -rf "${EXTRACTED_TAR_DIRECTORY}"
+
+rm "${TAR_FILE}"
 
 printf "SKN Shell Script Library Installed Successfully! ✅ \n"
