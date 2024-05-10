@@ -7,12 +7,12 @@ export FORCE_COLOR=true
 set -e
 
 #* Code starts here
-DIRECTORY="$HOME/.shell-lib"
-TAG="1.0.0"
+DIRECTORY="${HOME}/.shell-lib"
+TAG="1.1.0"
 
 mkdir "${DIRECTORY}"
 
-curl -sL https://github.com/skn437/skn-shell-utils/archive/refs/tags/v1.0.0.tar.gz >"${DIRECTORY}/shell.tar.gz"
+curl -sL "https://github.com/skn437/skn-shell-utils/archive/refs/tags/v${TAG}.tar.gz" >"${DIRECTORY}/shell.tar.gz"
 
 tar -xzf "${DIRECTORY}/shell.tar.gz" -C "${DIRECTORY}"
 
