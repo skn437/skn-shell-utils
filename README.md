@@ -53,7 +53,7 @@
 - show_success_message
 - show_info_message
 
-### **`Spring` Functions: It's only for Spring Boot**
+### **`Spring` Functions: It's only for Spring Boot & good for GitHub Actions, Docker Images**
 
 - build_jar (takes maximum 3 arguments for `gradlew` command)
 - copy_config_yaml (takes 1 argument)
@@ -73,9 +73,7 @@
 ### To install, open the terminal & do the following
 
 > ```zsh
-> curl -sL https://raw.githubusercontent.com/skn437/skn-shell-utils/master/build.sh > ~/Downloads/build.sh
-> chmod u+x ~/Downloads/build.sh
-> bash ~/Downloads/build.sh
+> curl -s https://raw.githubusercontent.com/skn437/skn-shell-utils/master/build.sh | bash
 > ```
 
 ### Inside your shell script, you can import the scripts like this to get the library
