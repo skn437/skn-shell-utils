@@ -1,30 +1,25 @@
 #!/usr/bin/bash
 
-#* Enables colors in console
-export FORCE_COLOR=true
-
-#* Enables exit code 1 upon error on running any step
 set -e
 
-#* Code starts here
-RESET="\033[0m"
+RESET="\u001b[0m"
 
 #? Regular
-BLACK="\033[0;30m"
-RED="\033[0;31m"
-GREEN="\033[0;32m"
-YELLOW="\033[0;33m"
-BLUE="\033[0;34m"
-PURPLE="\033[0;35m"
-CYAN="\033[0;36m"
-WHITE="\033[0;37m"
+BLACK="\u001b[0;30m"
+RED="\u001b[0;31m"
+GREEN="\u001b[0;32m"
+YELLOW="\u001b[0;33m"
+BLUE="\u001b[0;34m"
+PURPLE="\u001b[0;35m"
+CYAN="\u001b[0;36m"
+WHITE="\u001b[0;37m"
 
 #? Bold
-BLACK_BOLD="\033[1;30m"
-RED_BOLD="\033[1;31m"
-GREEN_BOLD="\033[1;32m"
-YELLOW_BOLD="\033[1;33m"
-BLUE_BOLD="\033[1;34m"
-PURPLE_BOLD="\033[1;35m"
-CYAN_BOLD="\033[1;36m"
-WHITE_BOLD="\033[1;37m"
+BLACK_BOLD="\u001b[1;30m"
+RED_BOLD="\u001b[1;31m"
+GREEN_BOLD="\u001b[1;32m"
+YELLOW_BOLD="\u001b[1;33m"
+BLUE_BOLD="\u001b[1;34m"
+PURPLE_BOLD="\u001b[1;35m"
+CYAN_BOLD="\u001b[1;36m"
+WHITE_BOLD="\u001b[1;37m"
