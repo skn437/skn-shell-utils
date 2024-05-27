@@ -1,7 +1,0 @@
-{
-	"Bash: Print: Format": {
-		"prefix": "printf-bash",
-		"body": ["printf \"$0 \\n\""],
-		"description": "Bash: Print: Format"
-	}
-}

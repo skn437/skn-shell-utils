@@ -1,12 +1,7 @@
 #!/usr/bin/bash
 
-#* Enables colors in console
-export FORCE_COLOR=true
-
-#* Enables exit code 1 upon error on running any step
 set -e
 
-#* Code starts here
 build_jar() {
 	./gradlew $1 $2 $3
 	show_action_completion_message "Build Jar"

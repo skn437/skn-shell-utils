@@ -4,7 +4,7 @@
 
 > Shell Script
 
-[![GitHub Release](https://img.shields.io/github/v/release/skn437/skn-shell-utils)](https://github.com/skn437/skn-shell-utils/releases/tag/v1.2.0) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
+[![GitHub Release](https://img.shields.io/github/v/release/skn437/skn-shell-utils)](https://github.com/skn437/skn-shell-utils/releases/tag/v1.3.0) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
 
 &nbsp;
 
@@ -53,7 +53,12 @@
 - show_success_message
 - show_info_message
 
-### **`Spring` Functions: It's only for Spring Boot & good for GitHub Actions, Docker Images**
+### **`Package` Functions: Each takes no argument**
+
+- apt_prepare (updates, upgrades, autoremoves `apt`. Only for `debian` based linux distributions)
+- brew_prepare (updates, upgrades, autoremoves, cleans up `Homebrew`)
+
+### **`Spring` Functions: Only for Spring Boot & good for GitHub Actions, Docker Images**
 
 - build_jar (takes maximum 3 arguments for `gradlew` command)
 - copy_config_yaml (takes 1 argument)
@@ -72,23 +77,19 @@
 
 ### To install, open the terminal & do the following
 
-> ```zsh
-> curl -s https://raw.githubusercontent.com/skn437/skn-shell-utils/master/build.sh | bash
+> ```bash
+> curl -sSL https://raw.githubusercontent.com/skn437/skn-shell-utils/master/build.sh | bash
 > ```
 
 ### Inside your shell script, you can import the scripts like this to get the library
 
-> ```zsh
-> source "${HOME}/.shell-lib/ssu/basic.sh"
-> source "${HOME}/.shell-lib/ssu/color.sh"
-> source "${HOME}/.shell-lib/ssu/color.util.sh"
-> source "${HOME}/.shell-lib/ssu/message.sh"
-> source "${HOME}/.shell-lib/ssu/spring.sh"
+> ```bash
+> source "${HOME}/.shell-lib/ssu/main.sh"
 > ```
 
 ### For `Basic` functions, use it like following
 
-> ```zsh
+> ```bash
 > delete_directory "path to the directory"
 > delete_file "path to the file"
 > copy directory "path to the input directory" "path to the output directory"
@@ -99,23 +100,30 @@
 
 ### For `Color` functions, use it like following
 
-> ```zsh
+> ```bash
 > blue "message here"
 > red "message here"
 > ```
 
 ### For `Message` functions, use it like following
 
-> ```zsh
+> ```bash
 > show_error_message "this message will be printed red with cross mark"
 > show_success_message "this message will be printed green with tick mark"
 > show_info_message "this message will be printed blue with book info mark"
 > show_action_completion_message "action name here"
 > ```
 
+### For `Package` functions, use it like following
+
+> ```bash
+> apt_prepare
+> brew_prepare
+> ```
+
 ### For `Spring` functions, use it like following
 
-> ```zsh
+> ```bash
 > build_jar "command1" "command2" "command3"
 > run_jar "path to the jar file with file and its extension"
 > copy_config_yaml "path where the copied yaml file will be placed"
@@ -127,3 +135,11 @@
 
 - 👩‍🎨`Prodipta Das Logno` & 🧛‍♀️`Atoshi Sarker Prithula`: The two most special ladies of my life. I can't thank them enough for always treasuring me a lot. I am lucky that I met with these two amazing ladies. They have two special places in my heart and no other girl can ever replace them.
 - 💯`My Parents`: The greatest treasures of my life ever.
+
+&nbsp;
+
+## **_License:_**
+
+Copyright (C) 2024 SKN Shukhan
+
+Licensed under the MIT License

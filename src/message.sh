@@ -1,12 +1,7 @@
 #!/usr/bin/bash
 
-#* Enables colors in console
-export FORCE_COLOR=true
-
-#* Enables exit code 1 upon error on running any step
 set -e
 
-#* Code starts here
 show_error_message() {
 	printf "$(red %s) ❌ \n" "$1"
 }
