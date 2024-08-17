@@ -3,7 +3,7 @@
 set -e
 
 DIRECTORY="${HOME}/.shell-lib"
-TAG="1.4.0"
+TAG="1.4.1"
 
 UTILS_DIRECTORY="${DIRECTORY}/ssu"
 TAR_FILE="${DIRECTORY}/shell.tar.gz"
