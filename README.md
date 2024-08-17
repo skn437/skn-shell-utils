@@ -4,7 +4,7 @@
 
 > Shell Script
 
-[![GitHub Release](https://img.shields.io/github/v/release/skn437/skn-shell-utils)](https://github.com/skn437/skn-shell-utils/releases/tag/v1.3.0) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
+[![GitHub Release](https://img.shields.io/github/v/release/skn437/skn-shell-utils)](https://github.com/skn437/skn-shell-utils/releases/tag/v1.4.0) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
 
 &nbsp;
 
@@ -57,12 +57,6 @@
 
 - apt_prepare (updates, upgrades, autoremoves `apt`. Only for `debian` based linux distributions)
 - brew_prepare (updates, upgrades, autoremoves, cleans up `Homebrew`)
-
-### **`Spring` Functions: Only for Spring Boot & good for GitHub Actions, Docker Images**
-
-- build_jar (takes maximum 3 arguments for `gradlew` command)
-- copy_config_yaml (takes 1 argument)
-- run_jar (takes 1 argument)
 
 &nbsp;
 
@@ -121,19 +115,11 @@
 > brew_prepare
 > ```
 
-### For `Spring` functions, use it like following
-
-> ```bash
-> build_jar "command1" "command2" "command3"
-> run_jar "path to the jar file with file and its extension"
-> copy_config_yaml "path where the copied yaml file will be placed"
-> ```
-
 &nbsp;
 
 ## **_Dedicated To:_**
 
-👩‍⚕️`Tanjila Hasan Trina`: The long lost love of my life. The course of nature separated us from our paths and put us in separate places far away from each other. But no matter how separated we are right now, each and every moment of mine is only dedicated to you. We may not see each other in this lifetime as it seems but I will find you again in the next life. I just one to say: `世界は残酷だ それでも君を愛すよ`
+- 👩‍⚕️`Tanjila Hasan Trina`: The long lost love of my life. The course of nature separated us from our paths and put us in separate places far away from each other. But no matter how separated we are right now, each and every moment of mine is only dedicated to you. We may not see each other in this lifetime as it seems but I will find you again in the next life. I just one to say: `世界は残酷だ それでも君を愛すよ`
 - 💯`My Parents`: The greatest treasures of my life ever.
 
 &nbsp;
