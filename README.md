@@ -72,13 +72,13 @@
 ### To install, open the terminal & do the following
 
 > ```bash
-> curl -sSL https://raw.githubusercontent.com/skn437/skn-shell-utils/master/build.sh | bash
+> curl -sSL https://raw.githubusercontent.com/skn437/skn-shell-utils/master/build.sh | sh
 > ```
 
 ### Inside your shell script, you can import the scripts like this to get the library
 
 > ```bash
-> source "${HOME}/.shell-lib/ssu/main.sh"
+> source "$HOME/.shell-lib/ssu/main.sh"
 > ```
 
 ### For `Basic` functions, use it like following
