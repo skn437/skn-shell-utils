@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project>
-  <version>1.4.2</version>
+  <version>1.4.3</version>
 
   <name>skn-shell-utils</name>
   <description>Shell Script Utility Functions</description>
